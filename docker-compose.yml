@@ -1,0 +1,12 @@
+version: '3'
+services:
+    tatsuzin_update_checker:
+        build:
+           context: .
+        tty: true
+        environment:
+            TZ: Asia/Tokyo
+        volumes:
+            - ./db_data:/home/db_data
+            - ./src:/home/src
+        command: python /home/src/tatsuzin_update_checker.py
