@@ -1,0 +1,4 @@
+tatsuzin-update-checker/*
+src/__pycache__/*
+db_data/*
+env.py
