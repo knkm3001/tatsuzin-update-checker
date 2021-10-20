@@ -7,6 +7,7 @@ import sqlite3
 from sqlite3 import IntegrityError
 from bs4 import BeautifulSoup
 import env
+from logging import getLogger, StreamHandler,FileHandler,Formatter, INFO
 
 DB_NAME = '/home/db_data/Tatsuzin.articles'
 TATSUZIN_INFO_URL = 'https://www.tatsuzin.info/rss/'
